@@ -9,6 +9,13 @@ public abstract class Monster {
   private Integer maxHP;
   private HashMap<String, Integer> items;
 
+  public Monster(Integer xp, Integer maxHP, HashMap<String, Integer> items) {
+    this.xp = xp;
+    this.maxHP = maxHP;
+    hp = this.maxHP;
+    this.items = items;
+  }
+
   public Integer getHp() {
     return hp;
   }
@@ -58,5 +65,11 @@ public abstract class Monster {
   @Override
   public int hashCode() {
     return Objects.hash(getHp(), getXp(), getMaxHP(), getItems());
+  }
+
+  @Override
+  public String toString() {
+    //TODO return "hp=" +
+    return "";
   }
 }
