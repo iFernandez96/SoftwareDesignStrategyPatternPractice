@@ -9,11 +9,12 @@ public abstract class Monster {
   private Integer maxHP;
   private HashMap<String, Integer> items;
 
-  public Monster(Integer xp, Integer maxHP, HashMap<String, Integer> items) {
-    this.xp = xp;
+  public Monster(Integer maxHP, Integer xp, HashMap<String, Integer> items) {
     this.maxHP = maxHP;
     hp = this.maxHP;
+    this.xp = xp;
     this.items = items;
+
   }
 
   public Integer getHp() {
@@ -69,7 +70,6 @@ public abstract class Monster {
 
   @Override
   public String toString() {
-    //TODO return "hp=" +
-    return "";
+    return "hp=" + hp + "/" + maxHP;
   }
 }

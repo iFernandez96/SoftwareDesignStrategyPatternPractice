@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 public class Imp extends Monster {
 
-  public Imp(Integer xp, Integer maxHP, HashMap<String, Integer> items) {
-    super(xp, maxHP, items);
+  public Imp(Integer maxHP, Integer xp, HashMap<String, Integer> items) {
+    super(maxHP, xp, items);
   }
 
   @Override
