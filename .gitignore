@@ -40,3 +40,12 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+.idea/
+.tmp/
+gradle/
+jdks/
+wrapper/
+native/
+daemon/
+caches/
